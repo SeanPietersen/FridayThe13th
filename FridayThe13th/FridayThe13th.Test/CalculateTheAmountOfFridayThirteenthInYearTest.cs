@@ -20,5 +20,19 @@ namespace FridayThe13th.Test
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(2169, "1/13/2169 10/13/2169")]
+        public void FridayTheThirteenthsTest2(int Start, string expected)
+        {
+            //Arrange
+            ICalculateTheAmountOfFridayThirteenthInYear fridayTheThirteenths = new CalculateTheAmountOfFridayThirteenthInYear();
+
+            //Act
+            var actual = fridayTheThirteenths.FridayTheThirteenths(Start);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
