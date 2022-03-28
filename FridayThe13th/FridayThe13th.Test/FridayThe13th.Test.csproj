@@ -19,4 +19,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FridayThe13th.App\FridayThe13th.App.csproj" />
+  </ItemGroup>
+
 </Project>
